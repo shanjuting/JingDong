@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 各个角的弧度，弧度越小圆角越小 -->
+    <corners
+        android:bottomLeftRadius="10dip" android:bottomRightRadius="10dip"/>
+    <!-- 描边 -->
+    <stroke android:color="#281f1d" android:width="1dip"/>
+
+
+</shape>

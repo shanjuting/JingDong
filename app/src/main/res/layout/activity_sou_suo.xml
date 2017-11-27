@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/head_layout"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp"
+        android:background="#ff00"
+        >
+        <ImageView
+            android:id="@+id/denglufanhui"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@mipmap/ic_action_back"
+            />
+        <EditText
+            android:id="@+id/et"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="6"
+            android:background="@drawable/edit"
+            android:drawableLeft="@mipmap/sou"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:hint="多快,好省,上京东" />
+
+        <CheckBox
+            android:id="@+id/check"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/check"
+            android:button="@null"
+            android:gravity="center"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/soso"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="搜索" />
+    </LinearLayout>
+
+
+
+    <com.bawei.swiperefreshlayoutlibrary.SwipyRefreshLayout
+        android:id="@+id/swipyRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/head_layout"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/head_layout" />
+    </com.bawei.swiperefreshlayoutlibrary.SwipyRefreshLayout>
+</LinearLayout>

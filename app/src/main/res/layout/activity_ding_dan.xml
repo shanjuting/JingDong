@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#ff0000"
+        >
+        <ImageView
+            android:id="@+id/ddback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_action_back"
+            android:padding="30dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单确认"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="100dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:id="@+id/xiugaidizhi"
+        >
+        <TextView
+            android:id="@+id/shrname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收货人姓名:单巨廷 "
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/shphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号:15201283435"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/shaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收获地址:"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_normal_dot_left"
+            android:layout_marginLeft="450dp"
+            android:layout_marginTop="-50dp"
+            />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/dingdan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relativeLayout2"
+        android:layout_marginTop="200dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/relativeLayout2">
+
+        <TextView
+            android:id="@+id/sumprice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_toLeftOf="@+id/btn"
+            android:layout_marginRight="5dp"
+            android:textColor="#ff0000"
+            android:textSize="20dp"
+            android:text="¥"/>
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="提交订单"
+            android:layout_alignParentRight="true"
+            android:background="#ff0000"
+            android:textColor="#ffffff"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
